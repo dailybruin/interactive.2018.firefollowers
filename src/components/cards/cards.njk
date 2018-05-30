@@ -1,0 +1,29 @@
+{% for item in articles %}
+{% if loop.index0 % 2 == 0 %}
+<div class="card">
+  <div class="image"><a href="{{item.Name}}.html"><img src="img/{{item.Photo}}"></a></div>
+  <div class="header-info">
+    <div class="flex-wrapper">
+    <a href="{{item.Name}}.html">
+      <div class="header-name">{{item.Name}}</div>
+      <div class="header-blurb">{{item.Headline}}</div>
+      <div class="header-byline">By {{item.Byline}}</div>
+    </a>
+    </div>
+  </div>
+</div>
+{% else %}
+<div class="card">
+  <div class="image rev"><a href="{{item.Name}}.html"><img src="img/{{item.Photo}}"></a></div>
+  <div class="header-info rev">
+    <div class="flex-wrapper">
+    <a href="{{item.Name}}.html">
+      <div class="header-name">{{item.Name}}</div>
+      <div class="header-blurb">{{item.Headline}}</div>
+      <div class="header-byline">By {{item.Byline}}</div>
+    </a>
+    </div>
+  </div>
+</div>
+{% endif %}
+{% endfor %}

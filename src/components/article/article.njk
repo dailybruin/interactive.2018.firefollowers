@@ -1,0 +1,8 @@
+{% for article in sonoma %}
+<div class="article-wrapper">
+  <h2>{{article.Headline}}</h2>
+  <div class="byline">BY {{article.Author | upper}}</div>
+  <img src="{{article.Leadimg}}" />
+  <div class="text">{{article.Text | nl2br | safe}}</div>
+</div>
+{% endfor %}

@@ -1,0 +1,44 @@
+h2 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2rem;
+
+}
+
+.article-wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  font-family: 'Lora', serif;
+
+  .byline {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    font-size: 1.3rem;
+    line-height: 1.75;
+    max-width: 800px;
+    margin: 0 auto;
+
+    br {
+      font-size: 150%
+    }
+  }
+
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .caption {
+    widith: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Fjalla One', sans-serif;
+  }
+}

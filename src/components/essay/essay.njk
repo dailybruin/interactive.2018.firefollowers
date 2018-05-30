@@ -1,0 +1,11 @@
+<div class="photo-essay">
+{% for location in photoessay %}
+  <h2>{{location.Place}}</h2>
+  {% for thing in location.images %}
+    <div class="photo-wrapper">
+      <img class="photo-essay-img" src="{{thing.Img}}"/>
+      <div class="caption">{{thing.Caption}}</div>
+    </div>
+  {% endfor %}
+{% endfor %}
+</div>
